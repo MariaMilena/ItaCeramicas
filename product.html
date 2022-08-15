@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">
+                <img src="img/zyro-image.png" alt="Logo" width="110px">
+            </label>
+            <ul>
+                <li><a class="active menua" href="index.html">Início</a></li>
+                <li><a class="menua" href="#info">Sobre</a></li>
+                <li><a class="menua" href="#">Produtos</a></li>
+                <li><a class="menua" href="#info">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div style="height: 150px;"></div>
+            <div class="row">
+                <div class="col-md-4" class="datailsProduct">
+                    <img class="imgProduct" src="img/pisos/colorado.jpg" alt="Logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <h4 style="font-weight: bold;">Piso Cerâmico Brilhante Borda Bold Fenix Marrom 20x60cm</h4>
+                    </div>
+                    <div class="row">
+                        <span style="color: #8c8c8c">Cód: 12345</span>
+                    </div>
+                    <div class="row" style="border: 1px solid #8c8c8c; width: 90%; border-radius: 5px; padding: 2%;">
+                        <div class="col-md-4">
+                            <span>Preço por m²</span>
+                            <h6 class="valueDetails">R$ 50,00/m<sup>2</sup></h6>
+                            <ul class="starDetails">
+                                <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                <li class="starItem"><i class="fa fa-star"></i></li>
+                                <li class="starItem"><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">Quantidade: (m²)</div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Calculadora de Pisos</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Calculadora de pisos</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        
+                                    </div>
+                                        <div class="modal-body">
+                                        <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 70px;"></div>
+            <div class="parallax1"></div>
+        </section>
+    </main>
+    <footer id="info">
+        <div id="contact">
+            <div id="container">
+                <div class="row">
+                    <br><br>
+                    <div class="col-md-6">
+                        <div id="contact-left">
+                            <h2>Itacêramicas</h2>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum nisi modi perferendis reiciendis a maiores quis exercitationem, nostrum fuga voluptatem deserunt eius vel voluptate, repellat debitis. Voluptas, neque blanditiis.
+                            </p>
+                            <div id="contact-info">
+                                <address>
+                                    <strong>Rua:</strong>
+                                    <p>179 algo aqui, casa</p><br>
+                                    Carira, SE 179
+                                </address>
+                                <div id="phone-fax-email">
+                                    <p>
+                                        <strong>Telefone:</strong>
+                                        <span>1234-5678</span><br>
+
+                                        <strong>Celular:</strong>
+                                        <span>(79) 91234-5678</span><br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul class="social-list">
+                                <li style="font-size: 25px;">
+                                    <a href="http://" class="social-icon icon-white">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="http://" class="social-icon icon-white">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="http://" class="social-icon icon-white">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                    <a href="http://" class="social-icon icon-white">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="contact-right">
+                            <h3>Contato</h3>
+                            <br>
+                            <form action="mailto:milena20182018@gmail.com?">
+                                <div class="input-container">
+                                    <i class="fa fa-user icon"></i>
+                                    <input type="text" name="Nome Completo" placeholder="Nome completo" class="form-control">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input type="text" name="Email" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-comment iconComment"></i>
+                                    <textarea name="Mensagem" placeholder="Mensagem..." rows="5" class="form-control"></textarea>
+                                </div>
+
+                                <div id="send-btn">
+                                    <a href="" class="btn btn-lg btn-general btn-white">ENVIAR</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="footer-copyrights">
+                            <p>Copyright 2022 &copy; Itacêramica • Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="footer-menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#about">SOBRE</a></li>
+                                <li><a href="">PRODUTOS</a></li>
+                                <li><a href="#contact">CONTATO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
