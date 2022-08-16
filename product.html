@@ -33,10 +33,24 @@
         <section>
             <div style="height: 150px;"></div>
             <div class="row">
-                <div class="col-md-4" class="datailsProduct">
-                    <img class="imgProduct" src="img/pisos/colorado.jpg" alt="Logo">
+                <div class="col-md-3" class="datailsProduct">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="imgProduct" src="img/pisos/colorado.jpg" alt="Logo">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="imgProduct" src="img/Banner/banner1.jpg" alt="Logo">
+                          </div>
+                        </div>
+                      </div>
+                    
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-9" style="padding: 0 5%;">
                     <div class="row">
                         <h4 style="font-weight: bold;">Piso Cerâmico Brilhante Borda Bold Fenix Marrom 20x60cm</h4>
                     </div>
@@ -44,48 +58,65 @@
                         <span style="color: #8c8c8c">Cód: 12345</span>
                     </div>
                     <div class="row" style="border: 1px solid #8c8c8c; width: 90%; border-radius: 5px; padding: 2%;">
-                        <div class="col-md-4">
-                            <span>Preço por m²</span>
-                            <h6 class="valueDetails">R$ 50,00/m<sup>2</sup></h6>
-                            <ul class="starDetails">
-                                <li class="starItem"><i class="fa fa-star checked"></i></li>
-                                <li class="starItem"><i class="fa fa-star checked"></i></li>
-                                <li class="starItem"><i class="fa fa-star checked"></i></li>
-                                <li class="starItem"><i class="fa fa-star"></i></li>
-                                <li class="starItem"><i class="fa fa-star"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">Quantidade: (m²)</div>
-                        <div class="col-md-4">
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Calculadora de Pisos</button>
+                        <div class="row col-md-12">
+                            <div class="col-md-4">
+                                <span>Preço por m²</span>
+                                <h6 class="valueDetails">R$ 50,00/m<sup>2</sup></h6>
+                                <ul class="starDetails">
+                                    <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                    <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                    <li class="starItem"><i class="fa fa-star checked"></i></li>
+                                    <li class="starItem"><i class="fa fa-star"></i></li>
+                                    <li class="starItem"><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Quantidade: (m²)</p>
+                                <input type="text" name="Quantidade" placeholder="Quantidade" value="2,19" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Calculadora de Pisos</button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog">
-                                
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Calculadora de pisos</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        
-                                    </div>
-                                        <div class="modal-body">
-                                        <p>Some text in the modal.</p>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+                                    
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Calculadora de pisos</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
                                         </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <div class="modal-body">
+                                                <p>Tamanho do ambiente por área</p>
+                                            </div>
+                                            <div class="container">
+                                                <p>Área total (m²):</p>
+                                                <div class="input-container">
+                                                    <input type="text" name="Area tota" placeholder="Area tota" class="form-control">
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Calcular</button>
+                                        </div>
                                     </div>
-                                </div>
-                                
+                                    
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="product.html"><button class="buy">Comprar agora</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="height: 70px;"></div>
-            <div class="parallax1"></div>
         </section>
     </main>
     <footer id="info">
@@ -154,7 +185,7 @@
                                 </div>
 
                                 <div id="send-btn">
-                                    <a href="" class="btn btn-lg btn-general btn-white">ENVIAR</a>
+                                    <a href=""><button type="submit" class="btn btn-lg btn-general btn-white" style="background-color: transparent;">Enviar</button></a>
                                 </div>
                             </form>
                         </div>
